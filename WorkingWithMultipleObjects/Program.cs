@@ -20,14 +20,14 @@ namespace Assignment
                 emp.noOfWorkingHours = int.Parse(System.Console.ReadLine());
                 System.Console.Write("\nEnter Emp salary per hour:");
                 emp.salaryPerHour = System.Convert.ToDouble(System.Console.ReadLine());
-                Employee.OrganizationName = "Harsha Inc.";
+                Employee.OrganizationName = "Harsha Inc.";//static field
                 System.Console.WriteLine("\nEmp Organization Name:" + Employee.OrganizationName);
                 System.Console.WriteLine("\nEmp Type:" + Employee.TypeOfEmployee);
                 System.Console.WriteLine("\nEmp Department:" + emp.DepartmentName);
                 System.Console.Write("\nCalculate Employee Net salary:"+emp.CalculateNetSalary());
                 System.Console.Write("\nDo you want to continue to next employee-Yes/No?");
                 userchoice =System.Console.ReadLine().ToLower();
-            } while (userchoice!="no" &&userchoice!="n" );
+            } while (userchoice!="no" &userchoice!="n" );
         }
     }
 }
